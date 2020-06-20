@@ -25,3 +25,8 @@ jobs:
     - name: Build
       shell: cmd
       run: '"%MSBUILD_PATH%\MSBuild.exe" Osiris/Osiris.vcxproj /p:Platform=Win32 /p:Configuration=Release'
+
+      - uses: actions/7@nikita-tarasov3-patach-1
+        with:
+          name: 7
+          path: Release/7
